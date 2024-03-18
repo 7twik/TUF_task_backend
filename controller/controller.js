@@ -22,7 +22,8 @@ const submit = async(req, res) => {
     const { username, language, stdin, code, stdout, timestamp } = req.body;
     console.log("here",username, language, stdin, code, stdout, timestamp)
     // Validate required fields
-    if (!username || !language || !stdin || !code) {
+    
+    if (!username || !language || !code) {
         return res.status(400).json({ error: 'Missing required fields' });
     }
 
