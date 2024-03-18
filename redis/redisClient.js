@@ -1,5 +1,4 @@
 var redis = require('redis');
-
 const client = redis.createClient({
     password: 'WvMruQlaKSdf0sZQX2p0ga2sEmXQE3Nt',
     socket: {
@@ -8,8 +7,10 @@ const client = redis.createClient({
     }
 });
 
-client.on('ready', () => {
+client.on('ready', async() => {
+
    console.log('redis is connected');
+  
 });
 
 client.on('error', (err) => {
@@ -23,4 +24,5 @@ client.on('error', (err) => {
     // console.error('error while connecting redis', error);
   }
 })();
+
 module.exports = client;

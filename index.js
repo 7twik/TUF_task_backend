@@ -20,10 +20,12 @@ connection.connect((err) => {
     console.log('Connected to the database as ID ' + connection.threadId);
 });
 
+updateShowCache();
+
 app.use(cors({ origin: '*' }));
 app.use("", router);
 
-cron.schedule('*/2 * * * *', updateShowCache);
+cron.schedule('*/1 * * * *', updateShowCache);
 
 
 app.listen(8080, () => {
