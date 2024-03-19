@@ -4,7 +4,7 @@ Also cached redis server which gets updated every minute by cron job, why 1 minu
 
 
 to run the project
-step 1: git clone url
+step 1: git clone url <br/>
 step 2: cd into the folder
 step 3: npm install
 step 4: node index.js
