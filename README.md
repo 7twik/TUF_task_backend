@@ -1,5 +1,7 @@
 <h1>DOCS for the backend</h1>
 
+<h2>Frontend Link: <a href="https://github.com/7twik/TUF_task_frontend">https://github.com/7twik/TUF_task_frontend</a></h2>
+
 <h2>Routes</h2>
 Go to /show to read data(GET method)<br/>
 /submit is a post route<br/>
