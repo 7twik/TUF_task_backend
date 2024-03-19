@@ -21,3 +21,11 @@ DB_USER=<br/>
 DB_PASSWORD=<br/>
 DB_DATABASE=<br/>
 
+
+<h2>Difficulty in understanding the code base ?</h2>
+It's quiet simple, I have made the server in index.js file where I have also assembled the routes.js and made the cron-job<br/>
+redis/redisClient.js Here I have made the redis initialization function<br/>
+controller/controller.js Here I have made all the functions for the routes<br/>
+router/router.js Here I have declared the routes<br/>
+cron/cron.js Here I have made the cronjob function<br/>
+
